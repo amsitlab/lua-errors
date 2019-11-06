@@ -37,6 +37,7 @@ stack traceback:
 ```
 
 * formatting error message.
+
 ```
 local file = "path/to/file.txt"
 
@@ -45,6 +46,7 @@ print(err)
 ```
 
 output:
+
 ```
 raise by [errors.FileNotFound]:
 No    such file: path/to/file.txt
@@ -54,8 +56,10 @@ stack traceback:
 ```
 
 # Install #
-you can use [luarocks](https://luarocks.orh)
-```luarocks install errors
+you can use [luarocks](https://luarocks.org)
+
+```
+luarocks install errors
 ```
 
 # Project dependecies #
