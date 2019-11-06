@@ -4,13 +4,13 @@
 # Example #
 
 * using errors on current _ ENV
-```
+```lua
 local errors = require "errors"
 ```
 
 * handle specific error:
 
-```
+```lua
 local errors = require "errors"
 local raise = errors.Runtime("Runtime error")
 if raise:is(errors.Arithmetic) then
@@ -37,8 +37,7 @@ stack traceback:
 ```
 
 * formatting error message.
-
-```
+```lua
 local file = "path/to/file.txt"
 
 local err = errors.FileNotFound "No such file: {filename}" % {filename = file}
@@ -46,7 +45,6 @@ print(err)
 ```
 
 output:
-
 ```
 raise by [errors.FileNotFound]:
 No    such file: path/to/file.txt
@@ -56,15 +54,13 @@ stack traceback:
 ```
 
 # Install #
-you can use [luarocks](https://luarocks.org)
-
-```
-luarocks install errors
+you can use [luarocks](https://luarocks.orh)
+```luarocks install errors
 ```
 
 # Project dependecies #
-This project use exilent library
-   - [classy](https://github.com/)
+This project use excellent library
+   - [classy](https://github.com/siffiejoe/lua-classy)
 
 # Licanse #
    License is same as Lua 5.3 license.
